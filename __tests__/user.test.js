@@ -74,7 +74,7 @@ describe("User", () => {
 
   test ("Should calculate life expectency on earth based off workouts per week status", () => {
     const user = new User ("alex", 31, "no", "yes", "yes", 0)
-    expect(user.lifeExpectancy()).toEqual("blah")
+    expect(user.lifeExpectancy()).toEqual(75)
   });
 
 });

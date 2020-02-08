@@ -65,7 +65,26 @@ export class User {
 
     if (this.fastFood === "yes") {
       lifeExpectancy -= 5;
-      return lifeExpectancy;
+    }
+
+    if (this.exercise === 0) {
+      lifeExpectancy -= 10;
+      return lifeExpectancy
+    } else if (this.exercise > 0 && this.exercise < 2) {
+      lifeExpectancy += 5
+      // return lifeExpectancy
+    } else if (this.exercise > 2 && this.exercise < 4) {
+      lifeExpectancy += 7
+      // return lifeExpectancy
+    } else if (this.exercise > 4 && this.exercise < 6) {
+      lifeExpectancy += 9
+      // return lifeExpectancy
+    } else if (this.exercise === 7) {
+      lifeExpectancy += 11
+      // return lifeExpectancy
+    } else if (this.exercise > 7) {
+      return "Well, that's impossible"
+      // return lifeExpectancy
     }
   }
 }
