@@ -22,6 +22,11 @@ describe("User", () => {
     expect(user.drinker).toEqual("yes");
   });
 
+  test("should create new user from user class and test if they eat fast food", () => {
+    const user = new User("alex", 30, "no", "yes");
+    expect(user.fastFood).toEqual("blah");
+  });
+
   test("should calculate user age on Earth", () => {
     const user = new User("alex", 30);
     expect(user.earthAge()).toEqual(user.age);
