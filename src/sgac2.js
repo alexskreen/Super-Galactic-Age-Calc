@@ -55,15 +55,15 @@ export class User {
 
   lifeExpectancy() {
     let lifeExpectancy = 100;
-    if ((this.smoker = "yes")) {
+    if (this.smoker === "yes") {
       lifeExpectancy -= 20;
     }
 
-    if ((this.drinker = "yes")) {
+    if (this.drinker === "yes") {
       lifeExpectancy -= 10;
     }
 
-    if ((this.fastFood = "yes")) {
+    if (this.fastFood === "yes") {
       lifeExpectancy -= 5;
       return lifeExpectancy;
     }
