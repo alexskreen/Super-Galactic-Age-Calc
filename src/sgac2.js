@@ -58,9 +58,13 @@ export class User {
     if ((this.smoker = "yes")) {
       lifeExpectancy -= 20;
     }
-    console.log("made it to second if");
+
     if ((this.drinker = "yes")) {
       lifeExpectancy -= 10;
+    }
+
+    if ((this.fastFood = "yes")) {
+      lifeExpectancy -= 5;
       return lifeExpectancy;
     }
   }
