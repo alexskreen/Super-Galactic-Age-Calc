@@ -28,8 +28,8 @@ describe("User", () => {
   });
 
   test("should create new user from user class and test if they exercise", () => {
-    const user = new User("alex", 30, "no", "yes", "no");
-    expect(user.exercise).toEqual("blah");
+    const user = new User("alex", 30, "no", "yes", "no", 5)
+    expect(user.exercise).toEqual(5);
   });
 
   test("should calculate user age on Earth", () => {

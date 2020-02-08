@@ -1,10 +1,11 @@
 export class User {
-  constructor(name, age, smoker, drinker, fastFood) {
+  constructor(name, age, smoker, drinker, fastFood, exercise) {
     this.name = name;
     this.age = age;
     this.smoker = smoker;
     this.drinker = drinker;
     this.fastFood = fastFood;
+    this.exercise = exercise;
   }
 
   earthAge() {
