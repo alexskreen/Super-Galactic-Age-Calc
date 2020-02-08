@@ -16,4 +16,9 @@ describe("User", () => {
     const user = new User("alex", 30);
     expect(user.mercuryAge()).toEqual(user.age * (.24));
   });
+
+  test("should calculate user age on Venus", () => {
+    const user = new User("alex", 30);
+    expect(user.venusAge()).toEqual("blah");
+  });
 });

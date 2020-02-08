@@ -21,4 +21,14 @@ export class User {
       return "error. Please submit real age";
     }
   }
+
+  venusAge() {
+    if (this.age > 0) {
+      let userVenusAge = (this.age * (.62));
+      return userVenusAge;
+    } else if (this.age <= 0) {
+      return "error. Please submit real age";
+    }
+  }
+  
 }
