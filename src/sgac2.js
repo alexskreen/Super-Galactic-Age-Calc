@@ -53,4 +53,11 @@ export class User {
     }
   }
   
+  lifeExpectancy() {
+    let lifeExpectancy = 100;
+    if (this.smoker = "yes") {
+      lifeExpectancy -= 20
+      return lifeExpectancy;
+    }
+  }
 }
