@@ -3,7 +3,14 @@ import { exportAllDeclaration } from "@babel/types";
 
 describe('User', () => {
   test('should create new user from user class', () => {
-    let user = new User("alex", 30);
+    const user = new User("alex", 30);
     expect(user.age).toEqual(30);
   });
+
+  test('should calculate user age on earth', () => {
+    let user = new User("alex", 30);
+    expect(user.earthAge()).toEqual("blah");
+    console.log(this.earthAge)
+    console.log(earthAge);
+  })
 });
