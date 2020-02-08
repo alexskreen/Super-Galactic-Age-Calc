@@ -19,6 +19,12 @@ describe("User", () => {
 
   test("should calculate user age on Venus", () => {
     const user = new User("alex", 30);
-    expect(user.venusAge()).toEqual("blah");
+    expect(user.venusAge()).toEqual(user.age * (.62));
   });
+
+  test("should calculate user age on Mars", () => {
+    const user = new User("alex", 30);
+    expect(user.marsAge()).toEqual("blah");
+  });
+
 });
