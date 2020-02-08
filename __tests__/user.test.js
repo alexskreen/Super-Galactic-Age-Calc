@@ -7,8 +7,13 @@ describe("User", () => {
     expect(user.age).toEqual(30);
   });
 
-  test("should calculate user age on earth", () => {
-    let user = new User("alex", 30);
+  test("should calculate user age on Earth", () => {
+    const user = new User("alex", 30);
     expect(user.earthAge()).toEqual(user.age);
+  });
+
+  test("should calculate user age on Mercury", () => {
+    const user = new User("alex", 30);
+    expect(user.mercuryAge()).toEqual("blah");
   });
 });

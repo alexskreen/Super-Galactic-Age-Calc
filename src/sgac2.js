@@ -12,4 +12,13 @@ export class User {
       return "error. Please submit real age";
     }
   }
+
+  mercuryAge() {
+    if (this.age > 0) {
+      let userMercuryAge = (this.age * (.24));
+      return userMercuryAge;
+    } else if (this.age <= 0) {
+      return "error. Please submit real age";
+    }
+  }
 }
