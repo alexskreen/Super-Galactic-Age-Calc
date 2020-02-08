@@ -17,6 +17,11 @@ describe("User", () => {
     expect(user.smoker).toEqual("no");
   });
 
+  test("should create new user from user class and test if they are a drinker", () => {
+    const user = new User("alex", 30, "no", "yes");
+    expect(user.smoker).toEqual("blah");
+  });
+
   test("should calculate user age on Earth", () => {
     const user = new User("alex", 30);
     expect(user.earthAge()).toEqual(user.age);
