@@ -57,4 +57,9 @@ describe("User", () => {
     expect(user.jupiterAge()).toEqual(user.age * (11.86));
   });
 
+  test ("Should calculate life expectency on earth based off user inputs", () => {
+    const user = new User ("alex", 31, "no", "yes", "no", "yes")
+    expect(user.lifeExpectancy()).toEqual("blah")
+  });
+
 });
