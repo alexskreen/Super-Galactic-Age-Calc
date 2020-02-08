@@ -59,27 +59,32 @@ describe("User", () => {
 
   test ("Should calculate life expectency on earth based off smoking status", () => {
     const user = new User ("alex", 31, "no", "yes", "no", "yes")
-    expect(user.lifeExpectancy()).toEqual(80)
+    expect(user.lifeExpectancy()).toEqual(80);
   });
 
   test ("Should calculate life expectency on earth based off drinking status", () => {
     const user = new User ("alex", 31, "no", "yes", "no", "yes")
-    expect(user.lifeExpectancy()).toEqual(70)
+    expect(user.lifeExpectancy()).toEqual(70);
   });
 
   test ("Should calculate life expectency on earth based off fast food status", () => {
     const user = new User ("alex", 31, "no", "yes", "yes", "yes")
-    expect(user.lifeExpectancy()).toEqual(85)
+    expect(user.lifeExpectancy()).toEqual(85);
   });
 
   test ("Should calculate life expectency on earth based off workouts per week status", () => {
     const user = new User ("alex", 31, "no", "yes", "yes", 0)
-    expect(user.lifeExpectancy()).toEqual(75)
+    expect(user.lifeExpectancy()).toEqual(75);
   });
 
   test ("Should calculate life expectency on earth based off workouts per week status (first else if)", () => {
     const user = new User ("alex", 31, "no", "no", "no", 7)
-    expect(user.lifeExpectancy()).toEqual(111)
+    expect(user.lifeExpectancy()).toEqual(111);
+  });
+
+  test ("should calculate remaining years on earth", () => {
+    const user = new User ("alex", 31, "no", "no", "no", "no")
+    expect(user.earthExpectedAge()).toEqual("blah");
   });
 
 });
