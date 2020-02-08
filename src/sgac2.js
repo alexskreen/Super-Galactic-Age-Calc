@@ -2,6 +2,7 @@ export class User {
   constructor(name, age, smoker, ) {
     this.name = name;
     this.age = age;
+    this.smoker = smoker;
   }
 
   earthAge() {

@@ -3,18 +3,18 @@ import { exportAllDeclaration } from "@babel/types";
 
 describe("User", () => {
   test("should create new user from user class and test their age.", () => {
-    const user = new User("alex", 30);
+    const user = new User("alex", 30, "no");
     expect(user.age).toEqual(30);
   });
 
   test("should create new user from user class and test their name.", () => {
-    const user = new User("alex", 30);
+    const user = new User("alex", 30, "no");
     expect(user.name).toEqual("alex");
   });
 
   test("should create new user from user class and test if they are a smoker", () => {
-    const user = new User("alex", 30);
-    expect(user.smoker).toEqual("blah");
+    const user = new User("alex", 30, "no");
+    expect(user.smoker).toEqual("no");
   });
 
   test("should calculate user age on Earth", () => {
