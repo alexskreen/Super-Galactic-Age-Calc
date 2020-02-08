@@ -10,7 +10,7 @@ export class User {
 
   earthAge() {
     if (this.age > 0) {
-      let userEarthAge = (this.age * 1);
+      let userEarthAge = this.age * 1;
       return userEarthAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
@@ -19,7 +19,7 @@ export class User {
 
   mercuryAge() {
     if (this.age > 0) {
-      let userMercuryAge = (this.age * (.24));
+      let userMercuryAge = this.age * 0.24;
       return userMercuryAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
@@ -28,7 +28,7 @@ export class User {
 
   venusAge() {
     if (this.age > 0) {
-      let userVenusAge = (this.age * (.62));
+      let userVenusAge = this.age * 0.62;
       return userVenusAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
@@ -37,7 +37,7 @@ export class User {
 
   marsAge() {
     if (this.age > 0) {
-      let marsAge = (this.age * (1.88));
+      let marsAge = this.age * 1.88;
       return marsAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
@@ -46,17 +46,21 @@ export class User {
 
   jupiterAge() {
     if (this.age > 0) {
-      let jupiterAge = (this.age * (11.86));
+      let jupiterAge = this.age * 11.86;
       return jupiterAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
     }
   }
-  
+
   lifeExpectancy() {
     let lifeExpectancy = 100;
-    if (this.smoker = "yes") {
-      lifeExpectancy -= 20
+    if ((this.smoker = "yes")) {
+      lifeExpectancy -= 20;
+    }
+    console.log("made it to second if");
+    if ((this.drinker = "yes")) {
+      lifeExpectancy -= 10;
       return lifeExpectancy;
     }
   }
