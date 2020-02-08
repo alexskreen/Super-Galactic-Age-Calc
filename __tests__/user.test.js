@@ -2,7 +2,7 @@ import { User } from "./../src/sgac2.js";
 import { exportAllDeclaration } from "@babel/types";
 
 describe("User", () => {
-  test("should create new user from user class", () => {
+  test("should create new user from user class and test their name and age.", () => {
     const user = new User("alex", 30);
     expect(user.age).toEqual(30);
   });
@@ -29,7 +29,7 @@ describe("User", () => {
 
   test("should calculate user age on Jupiter", () => {
     const user = new User("alex", 30);
-    expect(user.jupiterAge()).toEqual("blah");
+    expect(user.jupiterAge()).toEqual(user.age * (11.86));
   });
 
 });
