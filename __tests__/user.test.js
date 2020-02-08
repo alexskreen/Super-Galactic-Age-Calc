@@ -9,7 +9,12 @@ describe("User", () => {
 
   test("should create new user from user class and test their name.", () => {
     const user = new User("alex", 30);
-    expect(user.name).toEqual("blah");
+    expect(user.name).toEqual("alex");
+  });
+
+  test("should create new user from user class and test if they are a smoker", () => {
+    const user = new User("alex", 30);
+    expect(user.smoker).toEqual("blah");
   });
 
   test("should calculate user age on Earth", () => {
