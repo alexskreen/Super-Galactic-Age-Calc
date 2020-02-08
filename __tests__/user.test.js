@@ -27,4 +27,9 @@ describe("User", () => {
     expect(user.marsAge()).toEqual(user.age * (1.88));
   });
 
+  test("should calculate user age on Jupiter", () => {
+    const user = new User("alex", 30);
+    expect(user.jupiterAge()).toEqual("blah");
+  });
+
 });

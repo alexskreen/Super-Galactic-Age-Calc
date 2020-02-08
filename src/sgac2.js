@@ -33,8 +33,17 @@ export class User {
 
   marsAge() {
     if (this.age > 0) {
-      let marsAge = (this.age * (.62));
+      let marsAge = (this.age * (1.88));
       return marsAge;
+    } else if (this.age <= 0) {
+      return "error. Please submit real age";
+    }
+  }
+
+  jupiterAge() {
+    if (this.age > 0) {
+      let jupiterAge = (this.age * (11.86));
+      return jupiterAge;
     } else if (this.age <= 0) {
       return "error. Please submit real age";
     }
