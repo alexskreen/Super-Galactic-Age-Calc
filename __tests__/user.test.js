@@ -67,4 +67,9 @@ describe("User", () => {
     expect(user.lifeExpectancy()).toEqual(70)
   });
 
+  test ("Should calculate life expectency on earth based off fast food status", () => {
+    const user = new User ("alex", 31, "no", "yes", "yes", "yes")
+    expect(user.lifeExpectancy()).toEqual("blah")
+  });
+
 });
