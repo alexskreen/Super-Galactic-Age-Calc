@@ -89,7 +89,7 @@ describe("User", () => {
 
   test ("should calculate remaining years on mercury", () => {
     const user = new User ("alex", 31, "no", "no", "no", 0);
-    expect(user.mercuryYearsLeft()).toEqual("blah");
+    expect(user.mercuryYearsLeft()).toEqual("blahh");
   });
 
 });
