@@ -58,18 +58,18 @@ describe("User", () => {
   });
 
   test ("Should calculate life expectency on earth based off smoking status", () => {
-    const user = new User ("alex", 31, "no", "yes", "no", "yes")
-    expect(user.lifeExpectancy()).toEqual(80);
+    const user = new User ("alex", 31, "no", "yes", "no", 7)
+    expect(user.lifeExpectancy()).toEqual(101);
   });
 
   test ("Should calculate life expectency on earth based off drinking status", () => {
-    const user = new User ("alex", 31, "no", "yes", "no", "yes")
-    expect(user.lifeExpectancy()).toEqual(70);
+    const user = new User ("alex", 31, "no", "yes", "no", 5)
+    expect(user.lifeExpectancy()).toEqual(99);
   });
 
   test ("Should calculate life expectency on earth based off fast food status", () => {
-    const user = new User ("alex", 31, "no", "yes", "yes", "yes")
-    expect(user.lifeExpectancy()).toEqual(85);
+    const user = new User ("alex", 31, "no", "yes", "yes", 3)
+    expect(user.lifeExpectancy()).toEqual(92);
   });
 
   test ("Should calculate life expectency on earth based off workouts per week status", () => {
@@ -83,8 +83,9 @@ describe("User", () => {
   });
 
   test ("should calculate remaining years on earth", () => {
-    const user = new User ("alex", 31, "no", "no", "no", "no")
+    const user = new User ("alex", 31, "no", "no", "no", 0);
     expect(user.earthExpectedAge()).toEqual("blah");
+
   });
 
 });
