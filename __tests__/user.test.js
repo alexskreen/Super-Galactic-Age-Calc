@@ -97,4 +97,9 @@ describe("User", () => {
     expect(user.venusYearsLeft()).toEqual(36.58);
   });
 
+  test ("should calculate remaining years on mars", () => {
+    const user = new User ("alex", 31, "no", "no", "no", 0);
+    expect(user.marsYearsLeft()).toEqual("blah");
+  });
+
 });

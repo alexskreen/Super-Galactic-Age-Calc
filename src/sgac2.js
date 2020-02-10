@@ -100,4 +100,10 @@ export class User {
    return userVenusyearsLeft;
   }
 
+  marsYearsLeft() {
+    let that = this;
+    let usermarsyearsLeft = ((that.lifeExpectancy()*1.88) - (that.earthAge()*1.88)); 
+   return usermarsyearsLeft;
+  }
+
 }
