@@ -82,11 +82,16 @@ export class User {
     }
     return lifeExpectancy
   }
-  earthExpectedAge() {
+  earthYearsLeft() {
     let that = this;
-    let userExpectedEarthAge = (that.lifeExpectancy() - that.earthAge()); 
-   return userExpectedEarthAge;
-   
+    let userEarthYearsLeft = (that.lifeExpectancy() - that.earthAge()); 
+   return userEarthYearsLeft;
+  }
+
+  mercuryYearsLeft() {
+    let that = this;
+    let userMercuryYearsLeft = ((that.lifeExpectancy()*.24) - (that.earthAge()*.24)); 
+   return userMercuryYearsLeft;
   }
 
 
