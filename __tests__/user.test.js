@@ -104,7 +104,7 @@ describe("User", () => {
 
   test ("should calculate remaining years on jupiter", () => {
     const user = new User ("alex", 31, "no", "no", "no", 0);
-    expect(user.jupiterYearsLeft()).toEqual("blah");
+    expect(user.jupiterYearsLeft()).toEqual(699.7399999999999);
   });
 
 });
