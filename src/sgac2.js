@@ -84,8 +84,8 @@ export class User {
   }
   earthExpectedAge() {
     let that = this;
-    let userExpectedEarthAge = (that.lifeExpectancy - that.earthAge); 
-   return userExpectedEarthAge
+    let userExpectedEarthAge = (that.lifeExpectancy() - that.earthAge()); 
+   return userExpectedEarthAge;
    
   }
 
