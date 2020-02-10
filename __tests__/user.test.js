@@ -82,6 +82,11 @@ describe("User", () => {
     expect(user.lifeExpectancy()).toEqual(111);
   });
 
+  test ("Should alert user they have outlived their estimated life expectancy", () => {
+    const user = new User ("alex", 120, "no", "no", "no", 7)
+    expect(user.lifeExpectancy()).toEqual("blah");
+  });
+
   test ("should calculate remaining years on earth", () => {
     const user = new User ("alex", 31, "no", "no", "no", 0);
     expect(user.earthYearsLeft()).toEqual(59);

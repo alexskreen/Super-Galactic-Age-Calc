@@ -80,6 +80,10 @@ export class User {
     } else if (this.exercise > 7) {
       return "Well, that's impossible"
     }
+    if (this.age > lifeExpectancy) {
+      return "Look at you, you have already outlived your estimated life expectancy"
+    }
+
     return lifeExpectancy
   }
   earthYearsLeft() {
