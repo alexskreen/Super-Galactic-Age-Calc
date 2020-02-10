@@ -94,5 +94,10 @@ export class User {
    return userMercuryYearsLeft;
   }
 
+  venusYearsLeft() {
+    let that = this;
+    let userVenusyearsLeft = ((that.lifeExpectancy()*.62) - (that.earthAge()*.62)); 
+   return userVenusyearsLeft;
+  }
 
 }

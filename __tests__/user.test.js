@@ -92,4 +92,9 @@ describe("User", () => {
     expect(user.mercuryYearsLeft()).toEqual(14.159999999999998);
   });
 
+  test ("should calculate remaining years on venus", () => {
+    const user = new User ("alex", 31, "no", "no", "no", 0);
+    expect(user.venusYearsLeft()).toEqual("blah");
+  });
+
 });
